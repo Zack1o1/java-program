@@ -6,8 +6,8 @@ package LAB_Report;
 class ParamCons{
     int age;
     String name;
-    public ParamCons(int value){
-      this.age = value;
+    public ParamCons(int age){
+      this.age = age;
     }
     public ParamCons(String name){
         this.name = name;

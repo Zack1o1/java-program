@@ -24,14 +24,16 @@ class Soori extends Cat{
     @Override
     public void display() {
         super.catName = "Soori";
-        System.out.println("I am "+catName);
+        super.display();
+//        System.out.println("I am "+catName);
     }
 }
 class Lusu extends Cat{
     @Override
     public void display() {
         super.catName = "Lusu";
-        System.out.println("I am "+catName);
+        super.display();
+//        System.out.println("I am "+catName);
     }
 }
 

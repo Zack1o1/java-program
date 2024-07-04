@@ -32,7 +32,7 @@ package LAB_Report;
 class ObjectDestruction {
     // Method called by garbage collector before destroying the object
     public void finalize() {
-        System.out.println("Object is being destroyed: " + this);
+        System.out.println("Object is destroyed");
     }
 }
 
@@ -40,8 +40,6 @@ public class Lab_8 {
     public static void main(String[] args) {
         ObjectDestruction obj1 = new ObjectDestruction();
         obj1.finalize(); // Explicitly calling finalize() (not recommended in practice)
-        obj1 = null; // Making obj1 eligible for garbage collection
-
         System.gc(); // Suggesting JVM to run garbage collector (not recommended in practice)
     }
 }

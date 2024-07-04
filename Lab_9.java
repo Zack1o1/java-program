@@ -8,8 +8,8 @@ class ChainCons {
     public ChainCons(int age){
         this.age = age;
     }
-    public ChainCons( String name){
-        this(10);
+    public ChainCons( String name,int age){
+        this(age);
         this.name = name;
     }
 
@@ -30,7 +30,7 @@ public class Lab_9 {
         // *    - It can be used to provide default values or to simplify complex initializations.
         ChainCons pc = new ChainCons(20);
         pc.display();
-        ChainCons pc1 = new ChainCons("Hello");
+        ChainCons pc1 = new ChainCons("Zack",10);
         pc1.display();
     }
 }
